@@ -3,11 +3,18 @@
   "description": "Chitanka links in Goodreads",
   "version": "0.1",
   "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.goodreads.com/book/show/*"],
       "js": ["content_script.js"]
     }
+  ],
+  "host_permissions": [
+    "https://goodreads.com/",
+    "https://chitanka.info/"
   ],
   "permissions": ["activeTab"]
 }

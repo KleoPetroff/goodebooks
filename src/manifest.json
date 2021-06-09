@@ -1,0 +1,13 @@
+{
+  "name": "GoodChitanka",
+  "description": "Chitanka links in Goodreads",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.goodreads.com/book/show/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

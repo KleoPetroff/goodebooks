@@ -7,7 +7,8 @@ const stylesHandler = 'style-loader';
 
 const config = {
   entry: {
-    content_script: path.join(__dirname, 'src/content_script.ts')
+    content_script: path.join(__dirname, 'src/content_script.ts'),
+    background: path.join(__dirname, 'src/background.ts')
   },
   devtool: 'cheap-module-source-map',
   output: {
@@ -28,11 +29,8 @@ const config = {
     rules: [
       {
         test: /\.(ts|tsx)$/i,
-        loader: 'esbuild-loader',
-        exclude: ['/node_modules/'],
-        options: {
-          tsconfigRaw: require('./tsconfig.json')
-        }
+        loader: 'ts-loader',
+        exclude: ['/node_modules/']
       },
       {
         test: /\.css$/i,
@@ -46,6 +44,9 @@ const config = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    fallback: {
+      'stream': require.resolve('stream-browserify')
+    }
   },
 };
 

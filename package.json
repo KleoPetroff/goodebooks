@@ -12,17 +12,22 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
+    "@types/chrome": "^0.0.145",
+    "@types/lodash-es": "^4.17.4",
     "copy-webpack-plugin": "^9.0.0",
-    "esbuild-loader": "^2.13.1",
+    "lodash-es": "^4.17.21",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
+    "stream-browserify": "^3.0.0",
     "typescript": "^4.3.2",
-    "webpack": "^5.38.1"
+    "webpack": "^5.38.1",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@webpack-cli/generators": "^2.2.0",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.1",
+    "node-polyfill-webpack-plugin": "^1.1.2",
     "style-loader": "^2.0.0",
     "ts-loader": "^9.2.3",
     "webpack-cli": "^4.7.2"

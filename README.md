@@ -1,6 +1,6 @@
-# GoodChitanka
+# GoodEBooks
 
-A Chrome extension to add links to [Chitanka.info](https://chitanka.info) to Goodreads.
+Chrome extension to download and read book from Goodreads.
 
 ```
 npm run build
@@ -13,3 +13,4 @@ yarn build
 ```
 
 to bundle your application
+

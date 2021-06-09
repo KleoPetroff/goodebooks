@@ -11,7 +11,7 @@ export function getData(data, title) {
 }
 
 function getFromSingleRecord(book, title) {
-  if (book.title === title) {
+  if (book.title.toString() === title) {
     return {
       id: book.id,
       slug: book.slug

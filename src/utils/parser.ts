@@ -1,4 +1,4 @@
-export const removeJsonTextAttribute = (value, parentElement) => {
+export const removeJsonTextAttribute = (value: string, parentElement: any) => {
   const keyNo = Object.keys(parentElement._parent).length
   const keyName = Object.keys(parentElement._parent)[keyNo - 1]
 

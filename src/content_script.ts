@@ -1,15 +1,16 @@
 import isEmpty from 'lodash-es/isEmpty'
 import { getData } from './utils/content'
 import { buildAnchorElement } from './utils/dom'
+import { Books, Response } from "./types";
 
 const bookTitle = document.getElementById('bookTitle').textContent.trim()
 
-chrome.runtime.sendMessage({ title: bookTitle }, response => {
+chrome.runtime.sendMessage({ title: bookTitle }, (response: Response<Books | {}>) => {
   if (isEmpty(response.results.books)) {
     return
   }
 
-  const data = getData(response, bookTitle)
+  const data = getData(response as Response<Books>, bookTitle)
 
   if (!data) {
     return

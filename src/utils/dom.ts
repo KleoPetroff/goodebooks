@@ -1,4 +1,6 @@
-export const buildAnchorElement = ({id, slug}) => {
+import { BookMeta } from '../types'
+
+export const buildAnchorElement = ({id, slug}: BookMeta) => {
   const a = document.createElement('a')
 
   a.setAttribute('href', `https://chitanka.info/book/${id}-${slug}`)

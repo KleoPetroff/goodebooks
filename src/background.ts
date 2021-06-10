@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
   fetch(url)
     .then((res) => res.text())
-    .then((data) => {
+    .then((data: string) => {
       const stringifiedJson = xml2json(data, {
         compact: true,
         trim: true,

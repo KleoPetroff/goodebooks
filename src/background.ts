@@ -2,7 +2,7 @@ import { xml2json } from 'xml-js'
 import { removeJsonTextAttribute } from './utils/parser'
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  const url = `https://chitanka.info/books/search.xml?q=${request.name}&match=exact`
+  const url = `https://chitanka.info/books/search.xml?q=${request.title}&match=exact`
 
   fetch(url)
     .then((res) => res.text())

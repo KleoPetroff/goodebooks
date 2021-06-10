@@ -4,7 +4,7 @@ import { buildAnchorElement } from './utils/dom'
 
 const bookTitle = document.getElementById('bookTitle').textContent.trim()
 
-chrome.runtime.sendMessage({ name: bookTitle }, response => {
+chrome.runtime.sendMessage({ title: bookTitle }, response => {
   if (isEmpty(response.results.books)) {
     return
   }

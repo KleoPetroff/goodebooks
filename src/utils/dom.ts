@@ -1,4 +1,4 @@
-export const buildUrl = ({id, slug}) => {
+export const buildAnchorElement = ({id, slug}) => {
   const a = document.createElement('a')
 
   a.setAttribute('href', `https://chitanka.info/book/${id}-${slug}`)

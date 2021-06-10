@@ -1,4 +1,26 @@
-import isEmpty from "lodash-es/isEmpty";
+import isEmpty from 'lodash-es/isEmpty'
+
+const getFromSingleRecord = (book, title) => {
+  if (book.title.toString() === title) {
+    return {
+      id: book.id,
+      slug: book.slug
+    }
+  }
+}
+
+const getFromMultipleRecords = (books, title) => {
+  const book = books.find(text => text.title === title)
+
+  if (isEmpty(book)) {
+    return
+  }
+
+  return {
+    id: book.id,
+    slug: book.slug
+  }
+};
 
 export function getData(data, title) {
   const books = data.results.books.book
@@ -10,24 +32,3 @@ export function getData(data, title) {
   return getFromMultipleRecords(books, title)
 }
 
-function getFromSingleRecord(book, title) {
-  if (book.title.toString() === title) {
-    return {
-      id: book.id,
-      slug: book.slug
-    }
-  }
-}
-
-function getFromMultipleRecords(books, title) {
-  const book = books.find(text => text.title === title)
-
-  if (isEmpty(book)) {
-    return
-  }
-
-  return {
-    id: book.id,
-    slug: book.slug
-  }
-}

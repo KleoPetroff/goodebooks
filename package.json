@@ -24,13 +24,13 @@
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "@webpack-cli/generators": "^2.2.0",
-    "css-loader": "^5.2.6",
-    "html-webpack-plugin": "^5.3.1",
-    "node-polyfill-webpack-plugin": "^1.1.2",
-    "style-loader": "^2.0.0",
-    "ts-loader": "^9.2.3",
-    "webpack-cli": "^4.7.2"
+    "@webpack-cli/generators": "2.2.0",
+    "css-loader": "5.2.6",
+    "html-webpack-plugin": "5.3.1",
+    "node-polyfill-webpack-plugin": "1.1.2",
+    "style-loader": "2.0.0",
+    "ts-loader": "9.2.3",
+    "webpack-cli": "4.7.2"
   },
   "description": "My webpack project"
 }

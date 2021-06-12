@@ -27,7 +27,7 @@ const getFromMultipleRecords = (books: Book[], title: string): BookMetaReturnTyp
   }
 };
 
-export function getData(data: Response<Books>, title: string): BookMetaReturnType {
+export function getBookMeta(data: Response<Books>, title: string): BookMetaReturnType {
   const books = data.results.books.book
 
   if (!Array.isArray(books)) {

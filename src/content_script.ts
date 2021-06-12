@@ -1,5 +1,5 @@
 import isEmpty from 'lodash-es/isEmpty'
-import { getData } from './utils/content'
+import { getBookMeta } from './utils/content'
 import { buildAnchorElement } from './utils/dom'
 import { Books, Response } from "./types";
 
@@ -10,7 +10,7 @@ chrome.runtime.sendMessage({ title: bookTitle }, (response: Response<Books | {}>
     return
   }
 
-  const bookMeta = getData(response as Response<Books>, bookTitle)
+  const bookMeta = getBookMeta(response as Response<Books>, bookTitle)
 
   if (isEmpty(bookMeta)) {
     return

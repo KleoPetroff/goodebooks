@@ -10,14 +10,14 @@ chrome.runtime.sendMessage({ title: bookTitle }, (response: Response<Books | {}>
     return
   }
 
-  const data = getData(response as Response<Books>, bookTitle)
+  const bookMeta = getData(response as Response<Books>, bookTitle)
 
   if (!data) {
     return
   }
 
   const ratingElement = document.querySelector('.ratingStars.wtrRating')
-  const link = buildAnchorElement(data)
+  const link = buildAnchorElement(bookMeta)
 
   ratingElement.parentNode.insertBefore(link, ratingElement.nextSibling)
 })

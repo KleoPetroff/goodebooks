@@ -12,7 +12,7 @@ chrome.runtime.sendMessage({ title: bookTitle }, (response: Response<Books | {}>
 
   const bookMeta = getData(response as Response<Books>, bookTitle)
 
-  if (!data) {
+  if (isEmpty(bookMeta)) {
     return
   }
 

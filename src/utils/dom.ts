@@ -1,6 +1,6 @@
 import { BookMeta } from '../types'
 
-export const buildAnchorElement = ({id, slug}: BookMeta) => {
+export const buildAnchorElement = ({ id, slug }: BookMeta) => {
   const a = document.createElement('a')
 
   a.setAttribute('href', `https://chitanka.info/book/${id}-${slug}`)
@@ -9,4 +9,4 @@ export const buildAnchorElement = ({id, slug}: BookMeta) => {
   a.text = 'Прочети в Chitanka'
 
   return a
-};
+}

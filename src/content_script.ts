@@ -1,7 +1,7 @@
 import isEmpty from 'lodash-es/isEmpty'
 import { getBookMeta } from './utils/content'
 import { buildAnchorElement } from './utils/dom'
-import { Books, Response } from "./types";
+import { Books, Response } from './types'
 
 const bookTitle = document.getElementById('bookTitle').textContent.trim()
 
@@ -21,5 +21,3 @@ chrome.runtime.sendMessage({ title: bookTitle }, (response: Response<Books | {}>
 
   ratingElement.parentNode.insertBefore(link, ratingElement.nextSibling)
 })
-
-

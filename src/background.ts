@@ -24,5 +24,5 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     .then((book) => sendResponse(book))
     .catch((error) => console.log(error))
 
-  return true; // Will respond asynchronously.
-});
+  return true // Will respond asynchronously.
+})

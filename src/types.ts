@@ -11,8 +11,8 @@ export interface Books {
 }
 
 export interface Book {
-  author: Author,
-  category: Category,
+  author: Author
+  category: Category
   'created-at': string
   id: string
   lang: string
@@ -50,6 +50,6 @@ export interface Sequence {
 }
 
 export interface BookMeta {
-  id: string,
+  id: string
   slug: string
 }

@@ -15,7 +15,7 @@ const getFromSingleRecord = (book: Book, title: string): BookMetaReturnType => {
 }
 
 const getFromMultipleRecords = (books: Book[], title: string): BookMetaReturnType => {
-  const book = books.find(text => text.title === title)
+  const book = books.find((text) => text.title === title)
 
   if (isEmpty(book)) {
     return null
@@ -25,7 +25,7 @@ const getFromMultipleRecords = (books: Book[], title: string): BookMetaReturnTyp
     id: book.id,
     slug: book.slug
   }
-};
+}
 
 export function getBookMeta(data: Response<Books>, title: string): BookMetaReturnType {
   const books = data.results.books.book
@@ -36,4 +36,3 @@ export function getBookMeta(data: Response<Books>, title: string): BookMetaRetur
 
   return getFromMultipleRecords(books, title)
 }
-

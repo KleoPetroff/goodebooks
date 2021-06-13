@@ -1,10 +1,10 @@
 import isEmpty from 'lodash-es/isEmpty'
-import { getGoodreadsMeta } from './shared/utils'
+import { getGoodreadsData } from './shared/utils'
 import { getBookMeta } from './integrations/chitanka/utils/content'
 import { buildAnchorElement } from './integrations/chitanka/utils/dom'
 import { Books, Response } from './integrations/chitanka/types'
 
-const { author, title } = getGoodreadsMeta()
+const { author, title, targetElement } = getGoodreadsData()
 
 chrome.runtime.sendMessage({ title }, (response: Response<Books | {}>) => {
   if (isEmpty(response.results.books)) {
@@ -17,8 +17,6 @@ chrome.runtime.sendMessage({ title }, (response: Response<Books | {}>) => {
     return
   }
 
-  const ratingElement = document.querySelector('.ratingStars.wtrRating')
   const link = buildAnchorElement(bookMeta)
-
-  ratingElement.parentNode.insertBefore(link, ratingElement.nextSibling)
+  targetElement.parentNode.insertBefore(link, targetElement.nextSibling)
 })

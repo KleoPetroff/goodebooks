@@ -1,10 +1,9 @@
 import isEmpty from 'lodash-es/isEmpty'
 import { getBookMeta } from './utils/content'
-import { buildAnchorElement } from './utils/dom'
+import { buildAnchorElement, getGoodreadsMeta } from './utils/dom'
 import { Books, Response } from './types'
 
-const title = document.getElementById('bookTitle').textContent.trim()
-const author = document.querySelector('.authorName [itemprop="name"]').textContent
+const { author, title } = getGoodreadsMeta()
 
 chrome.runtime.sendMessage({ title }, (response: Response<Books | {}>) => {
   if (isEmpty(response.results.books)) {

@@ -53,3 +53,8 @@ export interface BookMeta {
   id: string
   slug: string
 }
+
+export interface GoodreadsMeta {
+  title: string
+  author: string
+}

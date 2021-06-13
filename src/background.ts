@@ -1,5 +1,5 @@
 import { xml2json } from 'xml-js'
-import { removeJsonTextAttribute } from './utils/parser'
+import { removeJsonTextAttribute } from './shared/utils'
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   const url = `https://chitanka.info/books/search.xml?q=${request.title}&match=exact`

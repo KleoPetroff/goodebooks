@@ -1,7 +1,8 @@
 import isEmpty from 'lodash-es/isEmpty'
-import { getBookMeta } from './utils/content'
-import { buildAnchorElement, getGoodreadsMeta } from './utils/dom'
-import { Books, Response } from './types'
+import { getGoodreadsMeta } from './shared/utils'
+import { getBookMeta } from './integrations/chitanka/utils/content'
+import { buildAnchorElement } from './integrations/chitanka/utils/dom'
+import { Books, Response } from './integrations/chitanka/types'
 
 const { author, title } = getGoodreadsMeta()
 

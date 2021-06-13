@@ -3,8 +3,11 @@ import { Book, BookMeta, Books, Response } from '../types'
 
 type BookMetaReturnType = BookMeta | null
 
-const getFromSingleRecord = (book: Book, title: string): BookMetaReturnType => {
-  if (book.title !== title) {
+const checkBookMatch = (book: Book, title: string, author: string) =>
+  book.title === title || book.author['orig-name'] === author
+
+const getFromSingleRecord = (book: Book, title: string, author: string): BookMetaReturnType => {
+  if (!checkBookMatch(book, title, author)) {
     return null
   }
 
@@ -14,8 +17,12 @@ const getFromSingleRecord = (book: Book, title: string): BookMetaReturnType => {
   }
 }
 
-const getFromMultipleRecords = (books: Book[], title: string): BookMetaReturnType => {
-  const book = books.find((text) => text.title === title)
+const getFromMultipleRecords = (
+  books: Book[],
+  title: string,
+  author: string
+): BookMetaReturnType => {
+  const book = books.find((book) => checkBookMatch(book, title, author))
 
   if (isEmpty(book)) {
     return null
@@ -27,12 +34,16 @@ const getFromMultipleRecords = (books: Book[], title: string): BookMetaReturnTyp
   }
 }
 
-export function getBookMeta(data: Response<Books>, title: string): BookMetaReturnType {
+export function getBookMeta(
+  data: Response<Books>,
+  title: string,
+  author: string
+): BookMetaReturnType {
   const books = data.results.books.book
 
   if (!Array.isArray(books)) {
-    return getFromSingleRecord(books, title)
+    return getFromSingleRecord(books, title, author)
   }
 
-  return getFromMultipleRecords(books, title)
+  return getFromMultipleRecords(books, title, author)
 }

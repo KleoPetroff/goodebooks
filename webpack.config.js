@@ -7,7 +7,7 @@ const stylesHandler = 'style-loader';
 
 const config = {
   entry: {
-    content_script: path.join(__dirname, 'src/content_script.ts'),
+    content: path.join(__dirname, 'src/content.ts'),
     background: path.join(__dirname, 'src/background.ts')
   },
   devtool: 'cheap-module-source-map',

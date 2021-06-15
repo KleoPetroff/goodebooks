@@ -41,29 +41,29 @@ export class Chitanka {
     targetElement.parentNode.insertBefore(link, targetElement.nextSibling)
   }
 
-  fetch(request: ChromeContentRequest, sendResponse: any) {
+  fetch(request: ChromeContentRequest): Promise<Response<Books | {}>> {
     const url = `https://chitanka.info/books/search.xml?q=${request.title}&match=exact`
 
-    fetch(url)
-      .then((res) => res.text())
-      .then((data: string) => {
-        const stringifiedJson = xml2json(data, {
-          compact: true,
-          trim: true,
-          ignoreDeclaration: true,
-          ignoreInstruction: true,
-          ignoreAttributes: true,
-          ignoreComment: true,
-          ignoreCdata: true,
-          ignoreDoctype: true,
-          textFn: removeJsonTextAttribute
+    return new Promise((resolve, reject) => {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data: string) => {
+          const stringifiedJson = xml2json(data, {
+            compact: true,
+            trim: true,
+            ignoreDeclaration: true,
+            ignoreInstruction: true,
+            ignoreAttributes: true,
+            ignoreComment: true,
+            ignoreCdata: true,
+            ignoreDoctype: true,
+            textFn: removeJsonTextAttribute
+          })
+
+          return JSON.parse(stringifiedJson)
         })
-
-        return JSON.parse(stringifiedJson)
-      })
-      .then((book) => sendResponse(book))
-      .catch((error) => console.log(error))
-
-    return true // Will respond asynchronously.
+        .then((book) => resolve(book))
+        .catch((error) => reject(error))
+    })
   }
 }

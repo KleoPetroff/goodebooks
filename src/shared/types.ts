@@ -6,4 +6,9 @@ export interface GoodreadsMeta {
 
 export interface ChromeContentRequest {
   title: string
+  type: Integrations
+}
+
+export enum Integrations {
+  CHITANKA
 }

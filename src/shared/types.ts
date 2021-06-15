@@ -3,3 +3,7 @@ export interface GoodreadsMeta {
   author: string
   targetElement: HTMLDivElement
 }
+
+export interface ChromeContentRequest {
+  title: string
+}

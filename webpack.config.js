@@ -12,8 +12,7 @@ const config = {
   },
   devtool: 'cheap-module-source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new CopyPlugin({

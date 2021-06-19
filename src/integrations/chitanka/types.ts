@@ -10,13 +10,15 @@ export interface Books {
   book: Book | Book[]
 }
 
+export type BooksResponse = Response<Books | Record<string, unknown>>
+
 export interface Book {
   author: Author
   category: Category
   'created-at': string
   id: string
   lang: string
-  'orig-lang': string | {}
+  'orig-lang': string | Record<string, unknown>
   sequence: Sequence
   slug: string
   title: string

@@ -1,13 +1,13 @@
 import { xml2json } from 'xml-js'
 import isEmpty from 'lodash-es/isEmpty'
 import { getBookMeta } from './utils/content'
-import { Books, Response } from './types'
+import { Books, BooksResponse, Response } from './types'
 import { buildAnchorElement } from './utils/dom'
 import { removeJsonTextAttribute } from './utils/parser'
 import { ChromeContentRequest } from '../../shared/types'
 
 interface SetupProps {
-  response: Response<Books | {}>
+  response: BooksResponse
   title: string
   author: string
   targetElement: HTMLElement
@@ -41,7 +41,7 @@ export class Chitanka {
     targetElement.parentNode.insertBefore(link, targetElement.nextSibling)
   }
 
-  fetch(request: ChromeContentRequest): Promise<Response<Books | {}>> {
+  fetch(request: ChromeContentRequest): Promise<BooksResponse> {
     const url = `https://chitanka.info/books/search.xml?q=${request.title}&match=exact`
 
     return new Promise((resolve, reject) => {

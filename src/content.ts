@@ -5,6 +5,9 @@ import { Integrations } from './shared/types'
 
 const { author, title, targetElement } = getGoodreadsData()
 
-chrome.runtime.sendMessage({ title, type: Integrations.CHITANKA }, (response: BooksResponse) => {
-  Chitanka.getInstance().buildLink({ response, title, author, targetElement })
-})
+chrome.runtime.sendMessage(
+  { title, type: Integrations.CHITANKA },
+  (response: BooksResponse) => {
+    Chitanka.getInstance().buildLink({ response, title, author, targetElement })
+  }
+)

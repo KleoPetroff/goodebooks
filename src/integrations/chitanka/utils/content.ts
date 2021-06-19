@@ -1,12 +1,10 @@
 import isEmpty from 'lodash-es/isEmpty'
 import { Book, BookMeta, Books, Response } from '../types'
 
-type BookMetaReturnType = BookMeta | null
-
 const checkBookMatch = (book: Book, title: string, author: string) =>
   book.title === title || book.author['orig-name'] === author
 
-const getFromSingleRecord = (book: Book, title: string, author: string): BookMetaReturnType => {
+const getFromSingleRecord = (book: Book, title: string, author: string): BookMeta | null => {
   if (!checkBookMatch(book, title, author)) {
     return null
   }
@@ -17,11 +15,7 @@ const getFromSingleRecord = (book: Book, title: string, author: string): BookMet
   }
 }
 
-const getFromMultipleRecords = (
-  books: Book[],
-  title: string,
-  author: string
-): BookMetaReturnType => {
+const getFromMultipleRecords = (books: Book[], title: string, author: string): BookMeta | null => {
   const book = books.find((book) => checkBookMatch(book, title, author))
 
   if (isEmpty(book)) {
@@ -34,11 +28,7 @@ const getFromMultipleRecords = (
   }
 }
 
-export function getBookMeta(
-  data: Response<Books>,
-  title: string,
-  author: string
-): BookMetaReturnType {
+export function getBookMeta(data: Response<Books>, title: string, author: string): BookMeta | null {
   const books = data.results.books.book
 
   if (!Array.isArray(books)) {

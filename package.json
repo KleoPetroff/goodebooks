@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@types/chrome": "0.0.157",
-    "@types/lodash-es": "4.17.4",
+    "@types/lodash-es": "4.17.5",
     "copy-webpack-plugin": "9.0.1",
     "lodash-es": "4.17.21",
     "prettier": "2.4.0",

@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@types/chrome": "0.0.157",
+    "@types/chrome": "0.0.158",
     "@types/lodash-es": "4.17.5",
     "copy-webpack-plugin": "9.0.1",
     "lodash-es": "4.17.21",

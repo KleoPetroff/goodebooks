@@ -25,7 +25,7 @@
     "prettier": "2.4.1",
     "stream-browserify": "3.0.0",
     "typescript": "4.4.3",
-    "webpack": "5.55.0",
+    "webpack": "5.55.1",
     "xml-js": "1.6.11"
   },
   "devDependencies": {

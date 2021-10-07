@@ -390,12 +390,12 @@
   resolved "https://registry.yarnpkg.com/@webpack-cli/configtest/-/configtest-1.1.0.tgz#8342bef0badfb7dfd3b576f2574ab80c725be043"
   integrity sha512-ttOkEkoalEHa7RaFYpM0ErK1xc4twg3Am9hfHhL7MVqlHebnkYd2wuI/ZqTDj0cVzZho6PdinY0phFZV3O0Mzg==
 
-"@webpack-cli/generators@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/@webpack-cli/generators/-/generators-2.3.0.tgz"
-  integrity sha512-lnN1fNHBIKjHlVx/Qjc9fgYd4FWZHjsqa30bIYPEVpmJjxC2F9GgCMBvhtEvnQCYIo29a1VOXmVt3XNTQ0a7Ag==
+"@webpack-cli/generators@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@webpack-cli/generators/-/generators-2.4.0.tgz#05a51b53267044c947be346668c348c77a7d835b"
+  integrity sha512-HaS4ru2PrZMeVQbMCnxNiDsnTb4KXHKUh1g1mPXDxKmpHTQz4IXn6YqNOgnKYagJ/JohZfG4DTh1ObqCD6fMBw==
   dependencies:
-    colorette "^1.2.1"
+    webpack-cli "^4.9.0"
     yeoman-environment "^2.10.3"
     yeoman-generator "^4.12.0"
 
@@ -1015,7 +1015,7 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-colorette@^1.2.1, colorette@^1.2.2:
+colorette@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/colorette/-/colorette-1.2.2.tgz"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
@@ -4687,7 +4687,7 @@ watchpack@^2.2.0:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-webpack-cli@4.9.0:
+webpack-cli@4.9.0, webpack-cli@^4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-4.9.0.tgz#dc43e6e0f80dd52e89cbf73d5294bcd7ad6eb343"
   integrity sha512-n/jZZBMzVEl4PYIBs+auy2WI0WTQ74EnJDiyD98O2JZY6IVIHJNitkYp/uTXOviIOMfgzrNvC9foKv/8o8KSZw==

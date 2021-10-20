@@ -383,12 +383,12 @@
   resolved "https://registry.yarnpkg.com/@webpack-cli/configtest/-/configtest-1.1.0.tgz#8342bef0badfb7dfd3b576f2574ab80c725be043"
   integrity sha512-ttOkEkoalEHa7RaFYpM0ErK1xc4twg3Am9hfHhL7MVqlHebnkYd2wuI/ZqTDj0cVzZho6PdinY0phFZV3O0Mzg==
 
-"@webpack-cli/generators@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@webpack-cli/generators/-/generators-2.4.0.tgz#05a51b53267044c947be346668c348c77a7d835b"
-  integrity sha512-HaS4ru2PrZMeVQbMCnxNiDsnTb4KXHKUh1g1mPXDxKmpHTQz4IXn6YqNOgnKYagJ/JohZfG4DTh1ObqCD6fMBw==
+"@webpack-cli/generators@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@webpack-cli/generators/-/generators-2.4.1.tgz#738c0b2f209d7d9e0393f2d10f1a4569072825be"
+  integrity sha512-0JO0a56Wsa5Z8Njdwgds3Nx9AXXwSB0vZkcFrDdXjX+SKMKiUm+dhZGW3HRzDob/ICjOCBy3lIWhNfiM+fV1FA==
   dependencies:
-    webpack-cli "^4.9.0"
+    webpack-cli "^4.9.1"
     yeoman-environment "^2.10.3"
     yeoman-generator "^4.12.0"
 
@@ -4617,7 +4617,7 @@ utila@~0.4:
   resolved "https://registry.npmjs.org/utila/-/utila-0.4.0.tgz"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
 
-v8-compile-cache@^2.0.3, v8-compile-cache@^2.2.0:
+v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
@@ -4666,7 +4666,7 @@ watchpack@^2.2.0:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-webpack-cli@4.9.1:
+webpack-cli@4.9.1, webpack-cli@^4.9.1:
   version "4.9.1"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-4.9.1.tgz#b64be825e2d1b130f285c314caa3b1ba9a4632b3"
   integrity sha512-JYRFVuyFpzDxMDB+v/nanUdQYcZtqFPGzmlW4s+UkPMFhSpfRNmf1z4AwYcHJVdvEFAM7FFCQdNTpsBYhDLusQ==
@@ -4682,25 +4682,6 @@ webpack-cli@4.9.1:
     import-local "^3.0.2"
     interpret "^2.2.0"
     rechoir "^0.7.0"
-    webpack-merge "^5.7.3"
-
-webpack-cli@^4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-4.9.0.tgz#dc43e6e0f80dd52e89cbf73d5294bcd7ad6eb343"
-  integrity sha512-n/jZZBMzVEl4PYIBs+auy2WI0WTQ74EnJDiyD98O2JZY6IVIHJNitkYp/uTXOviIOMfgzrNvC9foKv/8o8KSZw==
-  dependencies:
-    "@discoveryjs/json-ext" "^0.5.0"
-    "@webpack-cli/configtest" "^1.1.0"
-    "@webpack-cli/info" "^1.4.0"
-    "@webpack-cli/serve" "^1.6.0"
-    colorette "^2.0.14"
-    commander "^7.0.0"
-    execa "^5.0.0"
-    fastest-levenshtein "^1.0.12"
-    import-local "^3.0.2"
-    interpret "^2.2.0"
-    rechoir "^0.7.0"
-    v8-compile-cache "^2.2.0"
     webpack-merge "^5.7.3"
 
 webpack-merge@^5.7.3:

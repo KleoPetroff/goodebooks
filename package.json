@@ -43,7 +43,7 @@
     "rimraf": "3.0.2",
     "style-loader": "3.3.1",
     "ts-loader": "9.2.6",
-    "webpack-cli": "4.9.1"
+    "webpack-cli": "4.9.2"
   },
   "lint-staged": {
     "src/**/*.ts": "npm run lint"

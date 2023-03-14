@@ -40,7 +40,7 @@
     "lint-staged": "13.2.0",
     "node-polyfill-webpack-plugin": "2.0.1",
     "rimraf": "4.4.0",
-    "style-loader": "3.3.1",
+    "style-loader": "3.3.2",
     "ts-loader": "9.4.2",
     "webpack-cli": "5.0.1"
   },

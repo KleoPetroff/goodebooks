@@ -22,7 +22,7 @@
     "@types/lodash-es": "4.17.7",
     "copy-webpack-plugin": "11.0.0",
     "lodash-es": "4.17.21",
-    "prettier": "2.8.7",
+    "prettier": "2.8.8",
     "stream-browserify": "3.0.0",
     "typescript": "5.0.4",
     "webpack": "5.80.0",

@@ -41,7 +41,7 @@
     "node-polyfill-webpack-plugin": "2.0.1",
     "rimraf": "5.0.1",
     "style-loader": "3.3.3",
-    "ts-loader": "9.4.2",
+    "ts-loader": "9.4.3",
     "webpack-cli": "5.1.1"
   },
   "lint-staged": {

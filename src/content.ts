@@ -5,18 +5,18 @@ import { Integrations } from './shared/types'
 
 const { author, title, targetElement } = getGoodreadsData()
 
-async function getBooks() {
-  return new Promise<BooksResponse>((resolve) => {
-    chrome.runtime.sendMessage(
-      { title, type: Integrations.CHITANKA },
-      (response: BooksResponse) => {
-        resolve(response)
-      }
-    )
-  })
+const getBooks = async (): Promise<BooksResponse> => {
+  try {
+    return await new Promise((resolve) => {
+      chrome.runtime.sendMessage({ title, type: Integrations.CHITANKA }, resolve)
+    })
+  } catch (error) {
+    console.error(error)
+    return Promise.reject(error)
+  }
 }
 
-async function buildLink() {
+const buildLink = async (): Promise<void> => {
   try {
     const response = await getBooks()
     Chitanka.getInstance().buildLink({ response, title, author, targetElement })

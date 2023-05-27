@@ -43,9 +43,9 @@ export function getBookMeta(
 ): BookMeta | null {
   const books = data.results.books.book
 
-  if (!Array.isArray(books)) {
-    return getFromSingleRecord(books, title, author)
+  if (Array.isArray(books)) {
+    return getFromMultipleRecords(books, title, author)
   }
 
-  return getFromMultipleRecords(books, title, author)
+  return getFromSingleRecord(books, title, author)
 }

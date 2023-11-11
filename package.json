@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "html-webpack-plugin": "5.5.3",
     "husky": "8.0.3",
-    "lint-staged": "15.0.2",
+    "lint-staged": "15.1.0",
     "node-polyfill-webpack-plugin": "2.0.1",
     "rimraf": "5.0.5",
     "style-loader": "3.3.3",

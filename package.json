@@ -38,7 +38,7 @@
     "html-webpack-plugin": "5.6.3",
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "node-polyfill-webpack-plugin": "4.0.0",
+    "node-polyfill-webpack-plugin": "4.1.0",
     "rimraf": "6.0.1",
     "style-loader": "4.0.0",
     "ts-loader": "9.5.1",

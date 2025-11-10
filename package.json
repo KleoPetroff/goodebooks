@@ -24,7 +24,7 @@
     "lodash-es": "4.17.21",
     "prettier": "3.5.3",
     "stream-browserify": "3.0.0",
-    "typescript": "5.8.3",
+    "typescript": "5.9.3",
     "webpack": "5.99.9",
     "xml-js": "1.6.11"
   },

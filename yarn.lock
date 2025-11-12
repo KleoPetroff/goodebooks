@@ -229,10 +229,10 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.4.tgz#d897170a2b0ba51f78a099edccd968f7b103387c"
   integrity sha512-ROFF39F6ZrnzSUEmQQZUar0Jt4xVoP9WnDRdWwF4NNcXs3xBTLgBUDoOwW141y1jP+S8nahIbdxbFC7IShw9Iw==
 
-"@types/chrome@0.0.326":
-  version "0.0.326"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.326.tgz#db759bc8b80182b97aa89f3b34da8dc4c6870ed5"
-  integrity sha512-WS7jKf3ZRZFHOX7dATCZwqNJgdfiSF0qBRFxaO0LhIOvTNBrfkab26bsZwp6EBpYtqp8loMHJTnD6vDTLWPKYw==
+"@types/chrome@0.1.28":
+  version "0.1.28"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.1.28.tgz#98d875d5f1ea36f988af1d2ae7a0e2a6d5b39de4"
+  integrity sha512-wANMmVt9H8UJeRsk4vlk5IVTTUIdk0J6CJC2ER60fGHTJOFVMuXpGhCqs6fUGw3m9pF1eXEvi+6ejlQZrtGA4A==
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"

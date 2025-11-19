@@ -41,7 +41,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.2.6",
     "node-polyfill-webpack-plugin": "4.1.0",
-    "rimraf": "6.1.0",
+    "rimraf": "6.1.2",
     "style-loader": "4.0.0",
     "ts-loader": "9.5.4",
     "webpack-cli": "6.0.1"

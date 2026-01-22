@@ -21,7 +21,7 @@
     "@types/chrome": "0.1.33",
     "@types/lodash-es": "4.17.12",
     "copy-webpack-plugin": "13.0.1",
-    "lodash-es": "4.17.22",
+    "lodash-es": "4.17.23",
     "prettier": "3.7.4",
     "stream-browserify": "3.0.0",
     "typescript": "5.9.3",

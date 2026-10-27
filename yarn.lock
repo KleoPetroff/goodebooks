@@ -166,12 +166,11 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.9.tgz#d229a7b7f9dac167a156992ef23c7f023653f53b"
   integrity sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==
 
-"@types/chrome@0.1.40":
-  version "0.1.40"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.1.40.tgz#9d863d37e53d560d8d08a09e29862f8e2d421cdb"
-  integrity sha512-UnfyRAe8ORu9HSuTH0EqyOEUin3JrWW9Nl/gDXezNfTUrfIoxw+WRZgKOxGz0t5BnjbfXBnS2eCYfW2PxH1wcA==
+"@types/chrome@0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.3.7.tgz#837d3a38ab761de909f69010b4f1dac8caf0478d"
+  integrity sha512-jWZgbHqWbTL1a5+PoyN0OJutNyejWgyZ5MdcvKo6iJE1TNRtXR3FxsC4WzNl52yZWPidfWC8NV/VUNZf+OFKcA==
   dependencies:
-    "@types/filesystem" "*"
     "@types/har-format" "*"
 
 "@types/eslint-scope@^3.7.7":
@@ -204,18 +203,6 @@
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.8.tgz#958b91c991b1867ced318bedea0e215ee050726e"
   integrity sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==
-
-"@types/filesystem@*":
-  version "0.0.30"
-  resolved "https://registry.npmjs.org/@types/filesystem/-/filesystem-0.0.30.tgz"
-  integrity sha512-NCoRgmGmLpTT9VFL6Bb6z0jQuqI3d0E5FGl7M0JOv/J5RQYo9s5aOItPYnpckx9MbYQk1APLXcF8f20Vqnf2yA==
-  dependencies:
-    "@types/filewriter" "*"
-
-"@types/filewriter@*":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@types/filewriter/-/filewriter-0.0.29.tgz"
-  integrity sha512-BsPXH/irW0ht0Ji6iw/jJaK8Lj3FJemon2gvEqHKpCdDCeemHa+rI3WBGq5z7cDMZgoLjY40oninGxqk+8NzNQ==
 
 "@types/har-format@*":
   version "1.2.6"
